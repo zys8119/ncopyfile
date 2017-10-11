@@ -1,8 +1,9 @@
 {
   "name": "ncopyfile",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "ncopyfile是一个文件拷贝及文件输入转处理",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
