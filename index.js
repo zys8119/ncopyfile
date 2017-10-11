@@ -2,6 +2,7 @@
 const ncommand = require("ncommand");
 const fs = require("fs");
 const path = require("path");
+const dir = path.parse(process.argv[1]).dir;
 //扩展类
 class extend {
     constructor(){
@@ -34,7 +35,7 @@ class commandsExtend {
     copyInit(filePath,pathData,type){
         var thist = this;
         pathData = pathData.map(function (e) {
-            var mapFilePath = path.resolve(__dirname,e);
+            var mapFilePath = path.resolve(dir,e);
             newExtend.copyFilePath(mapFilePath);
             var readFileSyncData = fs.readFileSync(filePath,"utf8");
             fs.writeFileSync(mapFilePath, (function (t,thist,readFileSyncData) {
@@ -51,7 +52,7 @@ class commandsExtend {
     copy(a,b,_this){
         var thist = this;
         if(b.length >= 2){
-            var filePath = path.resolve(__dirname,b[0]);
+            var filePath = path.resolve(dir,b[0]);
             var pathData = b[1].replace(/^\[|\]$/img,"").split(",");
             if(!fs.existsSync(filePath)){
                 _this.ERR(`文件不存在：${filePath}`);
