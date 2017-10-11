@@ -1,6 +1,6 @@
 {
   "name": "ncopyfile",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ncopyfile是一个文件拷贝及文件输入转处理",
   "main": "index.js",
   "bin": "index.js",
