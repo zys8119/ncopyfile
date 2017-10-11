@@ -1,0 +1,23 @@
+{
+  "name": "ncopyfile",
+  "version": "0.0.0",
+  "description": "ncopyfile是一个文件拷贝及文件输入转处理",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zys8119/ncopyfile.git"
+  },
+  "author": "张云山",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zys8119/ncopyfile/issues"
+  },
+  "homepage": "https://github.com/zys8119/ncopyfile#readme",
+  "dependencies": {
+    "ncommand": "0.0.7"
+  },
+  "devDependencies": {}
+}
